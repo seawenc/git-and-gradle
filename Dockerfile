@@ -13,6 +13,5 @@ wget http://services.gradle.org/distributions/gradle-4.8.1-bin.zip && \
 unzip gradle-4.8.1-bin.zip && \
 echo "export GRADLE_HOME=/opt/app/gradle-4.8.1" >> /etc/profile && \
 echo 'PATH=$GRADLE_HOME/bin:$PATH' >> /etc/profile  && \
-source /etc/profile && \
 rm -rf gradle-4.8.1-bin.zip && \
-gradle -version
+echo $PATH
